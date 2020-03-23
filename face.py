@@ -13,9 +13,12 @@ class Face:
         self.face_client = face_client
 
     def detectFaces(self, group_photo_name):
-        images_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)))
-        test_image_array = glob.glob(os.path.join(images_folder, group_photo_name))
-        image = open(test_image_array[0], 'r+b')
+
+        # images_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)))
+        # test_image_array = glob.glob(os.path.join(images_folder, group_photo_name))
+        # image = open(test_image_array[0], 'r+b')
+
+        image = open(group_photo_name, 'r+b')
 
         # Detect faces
         face_ids = []

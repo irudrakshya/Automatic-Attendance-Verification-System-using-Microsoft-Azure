@@ -1,34 +1,9 @@
 import csv
 import os
 
-'''
-# Attendance marking in csv file
-    loc = os.getcwd() + '\Attendance.csv'
-    csv_path = os.path.join(loc)
-    with open(csv_path, 'w', newline='') as w:
-        thewriter = csv.writer(w)
-        thewriter.writerow(['Names', 'Attendance'])
-        for _ in names.keys():
-            thewriter.writerow([_,0])
-
-    w.close()
-    with open(csv_path, 'r') as w:
-        thereader = csv.reader(w)
-        content = list(thereader)
-        for i in range(len(content)):
-            if content[i][0] in person_identified:
-                content[i][1] = 1
-    w.close()
-    with open(csv_path, 'w', newline='') as w:
-        thewriter = csv.writer(w)
-        thewriter.writerows(content)
-
-    os.startfile(csv_path)
-    print("Attendance taken successfully!")
-'''
-
 
 class Attendance:
+
     def __init__(self):
         pass
 
