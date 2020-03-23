@@ -44,7 +44,7 @@ try:
     person_Ids = f.identifyFaces(KEY, face_ids)
     person_identified = f.getPersonName(KEY, person_Ids)
 
-    img = Image.open(r'C:\Users\Rudrakshya\Desktop\PythonAzure' + '\\' + test_img)
+    img = Image.open(r'C:\Users\Rudrakshya\Desktop\Internship' + '\\' + test_img)
     # img = img.rotate(180)
     font = ImageFont.truetype("arial.ttf", 20)
     print('Drawing rectangle around face... see popup for results.')
@@ -56,7 +56,7 @@ try:
     img.show()
 
     # Attendance
-    filename = r'C:\Users\Rudrakshya\Desktop\PythonAzure\Attendance.csv'
+    filename = r'C:\Users\Rudrakshya\Desktop\Internship\Attendance.csv'
     header = ('Names', 'Attendance')
     data = [('Abhishek', 0),
             ('Abinash', 0),
@@ -64,7 +64,7 @@ try:
             ('Aparna', 0),
             ('Bikash', 0),
             ('Birendra', 0),
-            ('Deepak'),
+            ('Deepak',0),
             ('Donally', 0),
             ('Ebadat', 0),
             ('Hafiz', 0),

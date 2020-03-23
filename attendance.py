@@ -29,6 +29,8 @@ import os
 
 
 class Attendance:
+    def __init__(self):
+        pass
 
     def writer(self, header, data, filename, option):
         with open(filename, "w", newline="") as csvfile:
@@ -48,7 +50,6 @@ class Attendance:
     def updater(self, filename, names):
         with open(filename, newline="") as file:
             readData = [row for row in csv.DictReader(file)]
-            # readData[2]['Attendance'] = 1
             for row in readData:
                 if row['Names'] in names:
                     row['Attendance'] = 1

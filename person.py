@@ -31,7 +31,7 @@ class Person:
 
     def addFaces(self,names):
         print("")
-        loc = os.path.join(r'C:\Users\Rudrakshya\Desktop\PythonAzure\Images')
+        loc = os.path.join(r'C:\Users\Rudrakshya\Desktop\Internship\Images')
         for key in names.keys():
             images = [file for file in glob.glob(loc+'\\'+'*.jpg') if file.startswith(loc+'\\'+key)]
 
